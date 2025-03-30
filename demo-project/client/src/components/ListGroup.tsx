@@ -31,11 +31,7 @@ function ListGroup({ heading, onSelected }: ListGroupProps) {
           {users.map((user, index) => {
             return (
               <li
-                className={
-                  selectedIndex === index
-                    ? "list-group-item active"
-                    : "list-group-item"
-                }
+                className={selectedIndex === index ? "list-group-item active" : "list-group-item"}
                 key={user.name}
                 onClick={() => {
                   setSelectedIndex(index);

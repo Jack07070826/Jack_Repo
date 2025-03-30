@@ -28,18 +28,11 @@ function App() {
   }, []);
 
   return (
-    <UserContext.Provider
-      value={{ name: targetUser.name, job: targetUser.job }}
-    >
+    <UserContext.Provider value={{ name: targetUser.name, job: targetUser.job }}>
       <BrowserRouter>
         <div>Vite + React + NodeJS + Express</div>
-        <ListGroup
-          heading="Users"
-          onSelected={(username) => console.log(username)}
-        />
-        {showAlert && (
-          <Alert onClose={() => setShowAlert(!showAlert)}>Hello world</Alert>
-        )}
+        <ListGroup heading="Users" onSelected={(username) => console.log(username)} />
+        {showAlert && <Alert onClose={() => setShowAlert(!showAlert)}>Hello world</Alert>}
         <Button title="My Button" />
         <Like />
         <NavLink to="/">Home</NavLink>
