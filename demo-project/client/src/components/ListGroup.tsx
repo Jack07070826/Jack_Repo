@@ -21,6 +21,10 @@ function ListGroup({ heading, onSelected }: ListGroupProps) {
       .finally(() => console.log("Call '/api/user/' successfully"));
   }, []);
 
+  function handleAdd() {
+    setUsers((preUsers) => [...preUsers, { name: "hello", job: "world" }]);
+  }
+
   return (
     <>
       <h1>{heading}</h1>
@@ -44,6 +48,9 @@ function ListGroup({ heading, onSelected }: ListGroupProps) {
           })}
         </ul>
       </div>
+      <button type="button" className="btn btn-primary" onClick={handleAdd}>
+        Add User
+      </button>
     </>
   );
 }
