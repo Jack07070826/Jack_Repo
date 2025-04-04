@@ -22,7 +22,7 @@ function ListGroup({ heading, onSelected }: ListGroupProps) {
   }, []);
 
   function handleAdd() {
-    setUsers((preUsers) => [...preUsers, { name: "hello", job: "world" }]);
+    setUsers((preUsers) => [...preUsers, { name: Math.random().toString(), job: "world" }]);
   }
 
   return (
