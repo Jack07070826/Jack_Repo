@@ -12,6 +12,10 @@ import UserContext from "./context/UserContext";
 import axios from "axios";
 import User from "./models/User";
 
+/**
+ * Demonstrates a simple React application with routing and context.
+ * @returns App component
+ */
 function App() {
   const [showAlert, setShowAlert] = useState<boolean>(false);
   const [targetUser, setTargetUser] = useState<User>({ name: "", job: "" });
