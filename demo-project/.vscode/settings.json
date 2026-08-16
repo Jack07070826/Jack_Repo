@@ -1,0 +1,11 @@
+{
+  "git.enabled": true,
+  "git.autofetch": false,
+  "git.decorations.enabled": true,
+  "git.branchProtection": [],
+  "scm.defaultViewMode": "tree",
+  "scm.diffDecorations": "all",
+  "explorer.decorations.badges": true,
+  "explorer.decorations.colors": true,
+  "workbench.editor.enablePreview": false
+}
